@@ -12,12 +12,11 @@ public class ArrayPracticeWithMethod {
         // and then pass it into the method
         int[] scores = {2,5,8,23,4,5,6};
         printArrayItems(  scores );
-
         printMaxOfIntArray( new int[] {4,15,35,21,14});
-
         printMinOfIntArray(new int[]{6,8,9,1,40});
         printSumOfIntArray(new int[] {10,15,20,4,8,8});
         checkScoresAllMoreThan60(new int[] {95,100,8,90,75});
+        compare2arraySize(  new String[]{"Ali,Vehbi,Huseyin,Avni"}, new String[]{"Arraz"}  );
     }
     // printArrayItems
     // create a method that has one int array as a parameter
@@ -72,7 +71,17 @@ public class ArrayPracticeWithMethod {
         }else{
             System.out.println("someone has failed");
         }
+    }
 
+    public static void compare2arraySize(String[] arr1, String[] arr2){
+
+     if(   arr1.length > arr2.length){
+         System.out.println(" array 1 has more item");
+     }else if(arr1.length < arr2.length){
+         System.out.println(" array 2 has more item");
+        }else{
+         System.out.println("they have same item count");
+     }
     }
 
 }
